@@ -3,20 +3,20 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # /dev/nvme1n1p2 LABEL=ROOT
-UUID=4b0549a5-1cb4-402e-a75f-452516224c02	/         	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
+UUID=fc370344-9d61-4330-a70b-b2601e29e76f	/         	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
 
 # /dev/sda1 LABEL=DATA
-UUID=2301c4b3-a3bd-421d-aa8e-229ac334c679	/data     	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@data	0 0
+UUID=ee761c18-554c-412a-8e93-9d9c45acccf3	/data     	ext4      	rw,noatime	0 2
 
 # /dev/nvme1n1p1 LABEL=BOOT
-UUID=AD20-9868      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+UUID=615A-520F      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
 # /dev/nvme1n1p2 LABEL=ROOT
-UUID=4b0549a5-1cb4-402e-a75f-452516224c02	/home     	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@home	0 0
+UUID=fc370344-9d61-4330-a70b-b2601e29e76f	/home     	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@home	0 0
 
 # /dev/nvme1n1p2 LABEL=ROOT
-UUID=4b0549a5-1cb4-402e-a75f-452516224c02	/var/log  	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@log	0 0
+UUID=fc370344-9d61-4330-a70b-b2601e29e76f	/var/log  	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@log	0 0
 
 # /dev/nvme1n1p2 LABEL=ROOT
-UUID=4b0549a5-1cb4-402e-a75f-452516224c02	/var/cache/pacman/pkg	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@pkg	0 0
+UUID=fc370344-9d61-4330-a70b-b2601e29e76f	/var/cache/pacman/pkg	btrfs     	rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@pkg	0 0
 
