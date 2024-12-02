@@ -1,0 +1,22 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p2 LABEL=ARCH
+UUID=14851363-6827-43ec-a6e8-d5dce848252a	/         	btrfs     	rw,relatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@	0 0
+
+# /dev/nvme0n1p1 LABEL=BOOT
+UUID=DFBB-6EA8      	/boot     	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sda1 LABEL=DATA
+UUID=e1b1bd9b-5d11-4340-8af2-86a1b31406b8	/data     	ext4      	rw,relatime	0 2
+
+# /dev/nvme0n1p2 LABEL=ARCH
+UUID=14851363-6827-43ec-a6e8-d5dce848252a	/home     	btrfs     	rw,relatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
+
+# /dev/nvme0n1p2 LABEL=ARCH
+UUID=14851363-6827-43ec-a6e8-d5dce848252a	/var/log  	btrfs     	rw,relatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@log	0 0
+
+# /dev/nvme0n1p2 LABEL=ARCH
+UUID=14851363-6827-43ec-a6e8-d5dce848252a	/.snapshots	btrfs     	rw,relatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvol=/@snapshots	0 0
+
